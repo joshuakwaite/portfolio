@@ -4,46 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <title>JKW</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12  nav nav-bar">
-                <span class="left-nav" style="font-size: 2em;">
-                <a href="https://github.com/kalew8" target="_blank">
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-one" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"></a>
+                <a href="https://github.com/kalew8" target="_blank" class="navbar-brand social-icons">
                     <i class="fa fa-github-square" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/joshua-waite" target="_blank">
+                <a href="https://www.linkedin.com/in/joshua-waite" target="_blank" class="navbar-brand social-icons">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/joshua.kale.waite" target="_blank">
+                <a href="https://www.facebook.com/joshua.kale.waite" target="_blank" class="navbar-brand social-icons">
                     <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="mailto:kalewaite@gmail.com?Subject=Hey%20Josh!">
+                <a href="mailto:kalewaite@gmail.com?Subject=Hey%20Josh!" class="navbar-brand social-icons">
                     <i class="fa fa-envelope" aria-hidden="true"></i></a>
-                </span>
-            <span class="right-nav">
-                <h5><a href="#!/home" ng-class="{'active-home':tog==1}" ng-click="tog=1" ng-init="tog=1">Home</a>
-                <a href="#!/about" ng-class="{'active-about':tog==2}" ng-click="tog=2">About</a>
-                <a href="#!/skills" ng-class="{'active-skills':tog==3}" ng-click="tog=3">Skills</a>
-                <a href="#!/portfolio" ng-class="{'active-portfolio':tog==4}" ng-click="tog=4">Portfolio</a>
-                    </h5>
-            </span>
             </div>
-    </div>
-        <ng-view class="page {{pageClass}}"></ng-view>
-    </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-one">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#!/about">About</a>
+                    </li>
+                    <li>
+                        <a href="#!/skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#!/portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+    <ng-view class="page {{pageClass}}"></ng-view>
+</div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="app.js"></script>
-        <script src="components/home/home.js"></script>
-        <script src="components/about/about.js"></script>
-        <script src="components/skills/skills.js"></script>
-        <script src="components/portfolio/portfolio.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<script src="components/home/home.js"></script>
+<script src="components/about/about.js"></script>
+<script src="components/skills/skills.js"></script>
+<script src="components/portfolio/portfolio.js"></script>
 </body>
 
 </html>
+
+
+<!--<span class="left-nav" style="font-size: 2em;">-->
+                <!--<a href="https://github.com/kalew8" target="_blank">-->
+                    <!--<i class="fa fa-github-square" aria-hidden="true"></i></a>-->
+                <!--<a href="https://www.linkedin.com/in/joshua-waite" target="_blank">-->
+                    <!--<i class="fa fa-linkedin-square" aria-hidden="true"></i></a>-->
+                <!--<a href="https://www.facebook.com/joshua.kale.waite" target="_blank">-->
+                    <!--<i class="fa fa-facebook-square" aria-hidden="true"></i></a>-->
+                <!--<a href="mailto:kalewaite@gmail.com?Subject=Hey%20Josh!">-->
+                    <!--<i class="fa fa-envelope" aria-hidden="true"></i></a>-->
+                <!--</span>-->
+<!--<span class="right-nav">-->
+                <!--<h5><a href="#!/home" ng-class="{'active-home':tog==1}" ng-click="tog=1">Home</a>-->
+                <!--<a href="#!/about" ng-class="{'active-about':tog==2}" ng-click="tog=2" ng-init="tog=2">About</a>-->
+                <!--<a href="#!/skills" ng-class="{'active-skills':tog==3}" ng-click="tog=3">Skills</a>-->
+                <!--<a href="#!/portfolio" ng-class="{'active-portfolio':tog==4}" ng-click="tog=4">Portfolio</a>-->
+                    <!--</h5>-->
+                <!--</span>-->

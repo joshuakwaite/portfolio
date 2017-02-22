@@ -30,12 +30,13 @@ body {
 
 
 a {
-    color: #FF0044;
+    color: #ff3e38;
     text-decoration: none;
 }
 
 a:hover {
     color: #31B5E8;
+    text-decoration: none;
 }
 
 .page h1    { font-size:60px; }
@@ -49,13 +50,17 @@ a:hover {
 /*.page-home      { background:##2C3E48; color:white; }*/
 .page-about {
     color: white;
-    background-image: url("components/images/web-bg.png");
-    -webkit-background-size;
-    background-size: 100%;
-    overflow: hidden; background-position: bottom;
-    z-index: -9999; background-color: rgba(0,0,0,.5);
-background-blend-mode: multiply;
+    background: url("components/images/web-bg.png") no-repeat center center;
+    background-color: grey;
+    -webkit-background-size:;
+    overflow: visible;
+    background-position: bottom;
+    z-index: -9999;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: multiply;
 ; }
+
+
 /*.page-skills   { background:#ffa6bb; color:#9e0000; }*/
 /*.page-portfolio   { background:#eb8aff; color:#814cbc; }*/
 
@@ -89,55 +94,96 @@ background-blend-mode: multiply;
 ============================================================================= */
 
 
-.nav {
-    padding: 10px;
-    padding-right: 8.333%;
-    padding-left: 8.333%;
-    position: fixed;
-    background-color: rgba(255,255,255,.3);
-    border-bottom: 1px solid lightgrey;
+/*.nav {*/
+    /*padding: 5px;*/
+    /*padding-right: 8.333%;*/
+    /*padding-left: 8.333%;*/
+    /*position: fixed;*/
+    /*background-color: white;*/
+    /*border-bottom: 1px solid lightgrey;*/
+/*}*/
+
+/*.nav h3 {*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.nav .right-nav {*/
+    /*position: absolute;*/
+    /*right: 8.333%;*/
+/*}*/
+
+
+
+/*.nav a {*/
+    /*padding-right: 20px;*/
+    /*text-underline: none;*/
+    /*color: black;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.nav a:hover {*/
+    /*color: #ff3e38;*/
+    /*text-decoration: none;*/
+
+/*}*/
+
+/*.nav a:active {*/
+    /*color: #ff3e38;*/
+/*}*/
+
+/*.nav a:focus {*/
+    /*color: #ff3e38;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.nav .active-about {*/
+    /*color: #ff3e38;*/
+/*}*/
+/*.nav .active-skills {*/
+    /*color: #ff3e38;*/
+/*}*/
+/*.nav .active-portfolio {*/
+    /*color: #ff3e38;*/
+/*}*/
+
+.social-icons {
+    font-size: 2em;
 }
 
-.nav h3 {
-    display: inline-block;
+.navbar-custom {
+    background-color: white;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 0px;
+    border-bottom: 1px solid lightgray;
 }
 
-.nav .right-nav {
-    position: absolute;
-    right: 8.333%;
-}
-
-.nav a {
-    padding-right: 20px;
-    text-underline: none;
+.nav>li>a {
     color: black;
-    text-decoration: none;
 }
 
-.nav a:hover {
-    color: #31B5E8;
-    text-decoration: none;
-
-}
-
-.nav a:active {
+.nav>li>a:hover {
     color: #31B5E8;
 }
 
-.nav a:focus {
-    color: #44d93a;
-    text-decoration: none;
+.navbar-brand {
+    color: black;
 }
 
-.nav .active-about {
-    color: #44d93a;
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent !important;
 }
-.nav .active-skills {
-    color: #44d93a;
+
+a:focus {
+    color: none !important;
 }
-.nav .active-portfolio {
-    color: #44d93a;
+
+.navbar-right {
+    margin-right: 50px;
 }
+
+.navbar-toggle .icon-bar{ background-color: black;}
 
 
 /* Skills Page
@@ -161,7 +207,7 @@ background-blend-mode: multiply;
 
 .skills-two {
     background-color: #fafafa;
-    box-shadow: 5px 5px 15px #d0d0d0;
+    box-shadow: 0px 5px 10px #d0d0d0, 0px -5px 10px #d0d0d0;
 }
 
 .page-separator-one {
@@ -203,7 +249,7 @@ background-blend-mode: multiply;
 
 .skills-description .used {
     display: inline-block;
-    background-color: #44d93a;
+    background-color: #ff3e38;
     color: white;
     padding: 5px;
     margin: 5px;
@@ -217,22 +263,38 @@ background-blend-mode: multiply;
 
 /* About Page
 ============================================================================= */
+.about-description h1 {
+    color: white;
+    font-size: 70px;
+}
+.about-description h2 {
+    color: white;
+    font-size: 50px;
+}
+.about-description h3 {
+    color: white;
+    font-size: 30px;
+}
+
 
 .about-description p {
     color: white;
+    font-size: 15px;
 }
 
 .about-description .button-one {
     padding: 10px;
-    background-color: #FF0044;
+    background-color: #ff3e38;
     color: white;
     margin-right: 20px;
+    width: 200px;
 }
 
 .about-description .button-two {
     padding: 10px;
-    background-color: #FF0044;
+    background-color: #ff3e38;
     color: white;
+    width: 200px;
 }
 
 .about-description .buttons {
@@ -256,7 +318,7 @@ background-blend-mode: multiply;
 
 .project-description .used {
     display: inline-block;
-    background-color: #31B5E8;
+    background-color: #ff3e38;
     color: white;
     padding: 5px;
     margin: 5px;
@@ -280,13 +342,7 @@ background-blend-mode: multiply;
     z-index: 1;
 }
 
-.macbook-underlay {
-    z-index: -9999;
-    bottom: 357px;
-    width: 472px;
-    height: 296px;
-    left: 77px;
-}
+
 .spacing {
     margin: 50px;
 }
