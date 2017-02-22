@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-    color: #31B5E8;
+    color: grey;
     text-decoration: none;
 }
 
@@ -163,11 +163,11 @@ a:hover {
 }
 
 .nav>li>a:hover {
-    color: #31B5E8;
+    color: grey;
 }
 
 .navbar-brand {
-    color: black;
+    color: #ff3e38;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -183,7 +183,8 @@ a:focus {
     margin-right: 50px;
 }
 
-.navbar-toggle .icon-bar{ background-color: black;}
+.navbar-toggle .icon-bar{ background-color: black;
+    margin: 5px;}
 
 
 /* Skills Page
