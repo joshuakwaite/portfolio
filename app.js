@@ -24,6 +24,6 @@ app.config(["$routeProvider", function ($routeProvider) {
             controller: "portfolioController"
         })
         .otherwise({
-            redirectTo: "/home"
+            redirectTo: "/about"
         })
 }])
