@@ -50,7 +50,7 @@ a:hover {
 .page-about {
     color: white;
     background-image: url("components/images/web-bg.png");
-    -webkit-background-size:;
+    -webkit-background-size;
     background-size: 100%;
     overflow: hidden; background-position: bottom;
     z-index: -9999; background-color: rgba(0,0,0,.5);
@@ -277,7 +277,7 @@ background-blend-mode: multiply;
 }
 
 .macbook-overlay {
-    z-index: 1px;
+    z-index: 1;
 }
 
 .macbook-underlay {
