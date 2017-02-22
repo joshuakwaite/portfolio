@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    font-family: 'Raleway:300,400,700', sans-serif;
+}
+
+/* make our pages be full width and full height */
+/* positioned absolutely so that the pages can overlap each other as they enter and leave */
+.page        {
+    bottom:0; 
+    padding-top:50px;
+    position:absolute; 
+    /*text-align:center;*/
+    top:0;  
+    width:100%; 
+    z-index: -9999;
+    left: 0px;
+}
+
+/*.overlay {*/
+    /*z-index: -8888;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*position: fixed;*/
+    /*overflow: auto;*/
+    /*top: 0px;*/
+    /*left: 0px;*/
+    /*background: rgba(0, 0, 0, 0.7); !*can be anything, of course*!*/
+/*}*/
+
+
+a {
+    color: #FF0044;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #31B5E8;
+}
+
+.page h1    { font-size:60px; }
+.page a     { margin-top:50px; }
+.page {
+
+}
+
+/* PAGES (specific colors for each page)
+============================================================================= */
+/*.page-home      { background:##2C3E48; color:white; }*/
+.page-about {
+    color: white;
+    background-image: url("components/images/web-bg.png");
+    -webkit-background-size:;
+    background-size: 100%;
+    overflow: hidden; background-position: bottom;
+    z-index: -9999; background-color: rgba(0,0,0,.5);
+background-blend-mode: multiply;
+; }
+/*.page-skills   { background:#ffa6bb; color:#9e0000; }*/
+/*.page-portfolio   { background:#eb8aff; color:#814cbc; }*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.ng-enter       { animation: slideInRight 0.5s both ease-in; z-index: -8888; }
+.ng-leave       { animation: slideOutLeft 0.5s both ease-in; z-index: -9999; }
+
+    /* page specific animations ------------------------ */
+
+    /* home -------------------------- */
+/*
+    .page-home.ng-enter         { animation: scaleUp 0.5s both ease-in; }
+    .page-home.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }
+*/
+
+    /* about ------------------------ */
+/*
+    .page-about.ng-enter        { animation:slideInUp 0.5s both ease-in; }
+    .page-about.ng-leave        { animation:slideOutDown 0.5s both ease-in; }
+*/
+
+    /* contact ---------------------- */
+/*
+    .page-contact.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
+    .page-contact.ng-enter      { animation:slideInUp 0.5s both ease-in; }
+*/
+
+
+/* Navbar
+============================================================================= */
+
+
+.nav {
+    padding: 10px;
+    padding-right: 8.333%;
+    padding-left: 8.333%;
+    position: fixed;
+    background-color: rgba(255,255,255,.3);
+    border-bottom: 1px solid lightgrey;
+}
+
+.nav h3 {
+    display: inline-block;
+}
+
+.nav .right-nav {
+    position: absolute;
+    right: 8.333%;
+}
+
+.nav a {
+    padding-right: 20px;
+    text-underline: none;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #31B5E8;
+    text-decoration: none;
+
+}
+
+.nav a:active {
+    color: #31B5E8;
+}
+
+.nav a:focus {
+    color: #44d93a;
+    text-decoration: none;
+}
+
+.nav .active-about {
+    color: #44d93a;
+}
+.nav .active-skills {
+    color: #44d93a;
+}
+.nav .active-portfolio {
+    color: #44d93a;
+}
+
+
+/* Skills Page
+============================================================================= */
+
+.space-top {
+    margin-top: 100px;
+}
+
+.quarter-space-top {
+    margin-top: 25px;
+}
+
+.half-space-top {
+    margin-top: 50px;
+}
+
+.space-bottom {
+    margin-top: 100px;
+}
+
+.skills-two {
+    background-color: #fafafa;
+    box-shadow: 5px 5px 15px #d0d0d0;
+}
+
+.page-separator-one {
+    /* border-top: 1px solid lightgrey; */
+    position: absolute;
+    /*left: 0;*/
+    /*right: 0;*/
+    top: 531px;
+    /* margin: auto; */
+    /*width: 100%;*/
+    transform: rotate(180deg);
+}
+
+.page-separator {
+    /* border-top: 1px solid lightgrey; */
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+    /*width: 100%;*/
+}
+
+.skillsRowOne {
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.skillsRowTwo {
+    max-height: 125px;
+    min-height: 125px;
+}
+
+.skillsRowThree {
+    max-height: 125px;
+}
+
+.skills-description p {
+    color: grey;
+}
+
+.skills-description .used {
+    display: inline-block;
+    background-color: #44d93a;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 5px;
+    font-family: Raleway:300;
+
+}
+
+
+/* About Page
+============================================================================= */
+
+.about-description p {
+    color: white;
+}
+
+.about-description .button-one {
+    padding: 10px;
+    background-color: #FF0044;
+    color: white;
+    margin-right: 20px;
+}
+
+.about-description .button-two {
+    padding: 10px;
+    background-color: #FF0044;
+    color: white;
+}
+
+.about-description .buttons {
+    margin-top: 25px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+/* Portfolio
+============================================================================= */
+
+.project-description h2 {
+    font-family: Raleway:700;
+}
+
+.project-description p {
+    color: grey;
+}
+
+.project-description .used {
+    display: inline-block;
+    background-color: #31B5E8;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 5px;
+    font-family: Raleway:300;
+
+}
+
+.inside-projects img {
+    position: relative;
+}
+
+.inside-projects {
+    max-height: 300px;
+    margin-bottom: 200px;
+}
+
+.macbook-overlay {
+    z-index: 1px;
+}
+
+.macbook-underlay {
+    z-index: -9999;
+    bottom: 357px;
+    width: 472px;
+    height: 296px;
+    left: 77px;
+}
+.spacing {
+    margin: 50px;
+}
+
+.footer {
+    bottom: 15px;
+    position: fixed;
+    height: 75px;
+    padding: 0px;
+}
+
+.box {
+    height: 100%;
+    background-color: transparent;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+.box-inside {
+    color: lightgrey;
+    height: 100%;
+    width: 100%;
+}
+
+.text-inside {
+    position: relative;
+    top: 15px;
+    font-size: 3em;
+
+}
+
+/* ANIMATIONS
+============================================================================= */
+
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform: translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform: translateY(100%); }
+    to      { transform: translateY(0); }
+}
+
+/* slide out from the top */
+@keyframes slideOutDown {
+    from    { transform: translateY(0%); }
+    to      { transform: translateY(100%); }
+}
