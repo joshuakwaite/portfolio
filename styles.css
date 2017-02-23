@@ -297,9 +297,16 @@ a:focus {
     margin-top: 100px;
 }
 
-.skills-two {
+.skills-one {
     background-color: #fafafa;
-    box-shadow: 0px 5px 10px #d0d0d0, 0px -5px 10px #d0d0d0;
+    box-shadow: 0px 5px 10px #d0d0d0;
+    width: 100%;
+}
+
+.skills-two {
+
+    background-color: #fafafa;
+    box-shadow: 0px -5px 10px #d0d0d0;
     width: 100%;
 }
 
@@ -486,6 +493,16 @@ a:focus {
     top: 15px;
     font-size: 3em;
 
+}
+
+.container-fluid, .container {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    width: 100%;
 }
 
 /* ANIMATIONS
