@@ -7,11 +7,11 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "memorygame.html",
             controller: "cardController"
         })
-        .when("/home", {
+        .when("/empty/na", {
             templateUrl: "components/home/page-home.html",
             controller: "homeController"
         })
-        .when("/about", {
+        .when("/home", {
             templateUrl: "components/about/page-about.html",
             controller: "aboutController"
         })
@@ -19,7 +19,7 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "components/skills/page-skills.html",
             controller: "skillsController"
         })
-        .when("/portfolio", {
+        .when("/projects", {
             templateUrl: "components/portfolio/page-portfolio.html",
             controller: "portfolioController"
         })
@@ -27,3 +27,10 @@ app.config(["$routeProvider", function ($routeProvider) {
             redirectTo: "/about"
         })
 }])
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+});
+
