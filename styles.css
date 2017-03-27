@@ -375,6 +375,10 @@ a:focus {
 
 /* Portfolio
 ============================================================================= */
+.grabbable {
+    cursor: pointer;
+}
+
 .project-description {
     padding-left: 15px;
     padding-right: 15px;

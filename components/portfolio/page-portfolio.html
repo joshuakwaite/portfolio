@@ -1,8 +1,7 @@
 <div class="container-fluid container">
     <div class="row" style="margin-top: 75px; margin-bottom: 180px;">
         <div class="col-md-7 col-md-offset-0 col-xs-12">
-            <a href="https://github.com/V-School-SLC-January/Syllabusters" target="_blank"><img
-                    src="components/portfolio/images/syllabuster-macbook.png" class="img-responsive macbook-overlay"></a>
+            <div ng-click="clickedPicture('one')"><img src="components/portfolio/images/syllabuster-macbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
             <h2>Syllabuster</h2>
@@ -49,8 +48,7 @@
     </div>
     <div class="row" style="margin-bottom: 180px;">
         <div class="col-md-7 col-md-offset-0 col-xs-12">
-            <a href="https://github.com/kalew8/application-tracker" target="_blank"><img
-                    src="components/portfolio/images/apptracker-macbook.png" class="img-responsive macbook-overlay"></a>
+            <div ng-click="clickedPicture('two')"><img src="components/portfolio/images/apptracker-macbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
             <h2>Application Tracker</h2>
@@ -97,9 +95,7 @@
     </div>
     <div class="row" style="margin-bottom: 180px;">
         <div class="col-md-7 col-md-offset-0 col-xs-12">
-            <a href="http://htmlpreview.github.io/?https://github.com/kalew8/assignments/blob/master/projects/kj-diaries/index.html" target="_blank">
-                <img src="components/portfolio/images/kjmacbook.png" class="img-responsive macbook-overlay">
-            </a>
+            <div ng-click="clickedPicture('three')"><img src="components/portfolio/images/kjmacbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
             <h2>K&J Replica</h2>
@@ -126,9 +122,7 @@
 
     <div class="row" style="margin-bottom: 180px;">
         <div class="col-md-7 col-md-offset-0 col-xs-12">
-            <a href="https://github.com/kalew8/weather-app" target="_blank">
-                <img src="components/portfolio/images/weathermacbook.png" class="img-responsive macbook-overlay">
-            </a>
+            <div ng-click="clickedPicture('four')"><img src="components/portfolio/images/weathermacbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
             <h2>Weather API App</h2>
@@ -160,8 +154,7 @@
     </div>
     <div class="row" style="margin-bottom: 180px;">
         <div class="col-md-7 col-md-offset-0 col-xs-12">
-            <a href="https://github.com/kalew8/assignments/tree/master/exercises/rock-the-vote" target="_blank"><img
-                    src="components/portfolio/images/rockthevotemacbook.png" class="img-responsive macbook-overlay"></a>
+            <div ng-click="clickedPicture('five')"><img src="components/portfolio/images/rockthevotemacbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
             <h2>Rock the Vote</h2>
@@ -209,5 +202,34 @@
         <footer class="text-center" style="color: white; background-color: grey;">
             This website was created using AngularJS by Joshua Waite
         </footer>
+    </div>
+</div>
+
+<!--CLICK MODAL-->
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!--MODAL HEADER-->
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal"
+                        ng-click="toggleEdit = false">&times;</button>
+                <h2 class="modal-title">{{modalTitle}}</h2>
+            </div>
+            <!--MODAL BODY-->
+            <div class="modal-body">
+                <img ng-src="{{modalImage}}" class="img-responsive">
+            </div>
+            <!--MODAL FOOTER-->
+            <div class="modal-footer">
+
+                <button class="btn btn-danger"
+                        data-dismiss="modal"> Close
+                </button>
+
+            </div>
+        </div>
     </div>
 </div>
