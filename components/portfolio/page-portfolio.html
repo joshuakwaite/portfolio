@@ -4,7 +4,7 @@
             <div ng-click="clickedPicture('one')"><img src="components/portfolio/images/syllabuster-macbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
-            <h2>Syllabuster</h2>
+            <a href="https://github.com/V-School-SLC-January/Syllabusters" style="color: black; text-decoration: none;" target="_blank"><h2>Syllabuster</h2></a>
             <p>This web application helps students and teachers manage their educational content in a simple and unified web app. This full stack application utilises the MEAN stack.</p>
             <!--TODO: Add actual links to K&J diaries and project site.-->
             <p>You can view this project's github by clicking <a
@@ -51,7 +51,7 @@
             <div ng-click="clickedPicture('two')"><img src="components/portfolio/images/apptracker-macbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
-            <h2>Application Tracker</h2>
+            <a href="https://github.com/kalew8/application-tracker" style="color: black; text-decoration: none;" target="_blank"><h2>Application Tracker</h2></a>
             <p>This is a web application that helps the user keep track of submitted job applications. This is a full stack application that utilizes the MEAN stack.</p>
             <!--TODO: Add actual links to K&J diaries and project site.-->
             <p>You can view this project's github by clicking <a
@@ -98,7 +98,7 @@
             <div ng-click="clickedPicture('three')"><img src="components/portfolio/images/kjmacbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
-            <h2>K&J Replica</h2>
+            <a href="http://htmlpreview.github.io/?https://github.com/kalew8/assignments/blob/master/projects/kj-diaries/index.html" style="color: black; text-decoration: none;" target="_blank"><h2>K&J Replica</h2></a>
             <p>K&J Replica was a web project that I created from an image of an actual site.</p>
             <!--TODO: Add actual links to K&J diaries and project site.-->
             <p>You can view my project site <a href="http://htmlpreview.github.io/?https://github.com/kalew8/assignments/blob/master/projects/kj-diaries/index.html" target="_blank">here</a>. Please note that buttons and links are not currently active.</p>
@@ -125,7 +125,7 @@
             <div ng-click="clickedPicture('four')"><img src="components/portfolio/images/weathermacbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
-            <h2>Weather API App</h2>
+            <a href="https://github.com/kalew8/weather-app" style="color: black; text-decoration: none;" target="_blank"><h2>Weather App</h2></a>
             <p>This is a weather app that pulls data from the Google Maps Geocoding API and the Darksky Weather API. It
                 takes an address or zip code and returns a comprehensive weather report.</p>
             <!--TODO: Add an actual link to the link.-->
@@ -157,7 +157,7 @@
             <div ng-click="clickedPicture('five')"><img src="components/portfolio/images/rockthevotemacbook.png" class="grabbable img-responsive macbook-overlay"></div>
         </div>
         <div class="col-md-5 col-xs-12 col-md-offset-0 project-description text-center-xs text-center-sm">
-            <h2>Rock the Vote</h2>
+            <a href="https://github.com/kalew8/assignments/tree/master/exercises/rock-the-vote" style="color: black; text-decoration: none;" target="_blank"><h2>Rock the Vote</h2></a>
             <p>This is a web application that allows the user to add, edit, and up or down vote posts on political issues. This is a full stack application that utilizes the MEAN stack.</p>
             <!--TODO: Add actual links to K&J diaries and project site.-->
             <p>You can view this project by clicking <a
@@ -216,19 +216,10 @@
                 <button type="button" class="close"
                         data-dismiss="modal"
                         ng-click="toggleEdit = false">&times;</button>
-                <h2 class="modal-title">{{modalTitle}}</h2>
             </div>
             <!--MODAL BODY-->
             <div class="modal-body">
                 <img ng-src="{{modalImage}}" class="img-responsive">
-            </div>
-            <!--MODAL FOOTER-->
-            <div class="modal-footer">
-
-                <button class="btn btn-danger"
-                        data-dismiss="modal"> Close
-                </button>
-
             </div>
         </div>
     </div>
