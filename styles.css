@@ -496,7 +496,7 @@ a:focus {
     to      { transform: translateY(0); }
 }
 
-/* slide out from the top */
+/* slide out from the top*/
 @keyframes slideOutDown {
     from    { transform: translateY(0%); }
     to      { transform: translateY(100%); }
