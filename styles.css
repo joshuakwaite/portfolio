@@ -484,7 +484,7 @@ a:focus {
     from    { opacity: 0.3; -webkit-transform: scale(0.8); }
 }
 
-/* slide in from the right */
+/* slide in from the right - */
 @keyframes slideInRight {
     from    { transform: translateX(100%); }
     to      { transform: translateX(0); }
