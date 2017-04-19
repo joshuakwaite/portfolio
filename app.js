@@ -26,12 +26,16 @@ app.config(["$routeProvider", function ($routeProvider) {
         .otherwise({
             redirectTo: "/home"
         })
-}])
+}]);
 
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
         $(this).collapse('hide');
     }
 });
+//
+// $(window).scroll(function() {
+//     ($(window).scrollTop() < 1) ? $('.navbar').addClass('navbar-transparent') : $('.navbar').removeClass('navbar-transparent');
+// });
 
 

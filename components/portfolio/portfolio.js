@@ -29,6 +29,10 @@ app.controller("portfolioController", ["$scope", function($scope) {
                 $scope.modalTitle = 'Rock the Vote';
                 $scope.modalImage = 'components/portfolio/images/rockthevotemacbook.png';
                 break;
+            case 'six':
+                $scope.modalTitle = '3D Portrait Studio';
+                $scope.modalImage = 'components/portfolio/images/the3dps-macbook.png';
+                break;
         }
 
     };

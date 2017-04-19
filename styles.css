@@ -184,6 +184,8 @@ a:hover {
 /* Navbar
 ============================================================================= */
 
+
+
 .social-icons {
     font-size: 2em;
 }
@@ -223,6 +225,22 @@ a:focus {
 
 .navbar-toggle .icon-bar{ background-color: black;
     margin: 5px;}
+
+.navbar-transparent {
+    background-color: transparent;
+    border: 0px;
+}
+
+.navbar-transparent .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-transparent .navbar-nav>li>a:hover {
+    color: #31B0D5;
+}
+.navbar-transparent .navbar-nav>li>a:focus {
+    color: #83D4EB
+}
 
 
 /* Skills Page
